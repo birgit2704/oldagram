@@ -31,24 +31,24 @@ const posts = [
 
 const containerEl = document.getElementById("general-container");
 
-for (let i = 0; i < posts.length; i++) {
+posts.forEach((post) => {
   let main = document.createElement("div");
 
   main.innerHTML = `
   <main>
   <div class="general-container">
     <section class="main-header">
-        <img class="avatar" src="${posts[i].avatar}" alt="avatar" />
+        <img class="avatar" src="${post.avatar}" alt="avatar" />
         <div class="avatar-text">
-        <h1>${posts[i].name}</h1>
-        <p>${posts[i].location}</p>
+        <h1>${post.name}</h1>
+        <p>${post.location}</p>
         </div>
     </section>
     <section class="main-content">
     <img
         class="selfie"
         alt="self portrait"
-        src="${posts[i].post}"
+        src="${post.post}"
     />
 
     <div class="icons-section">
@@ -56,9 +56,9 @@ for (let i = 0; i < posts.length; i++) {
         <img src="images/icon-comment.png" alt="comment icon" />
         <img src="images/icon-dm.png" alt="forward icon" />
         <div class="comments">
-        <p class="likes bold">${posts[i].likes} likes</p>
+        <p class="likes bold">${post.likes} likes</p>
         <p>
-            <span class="bold">${posts[i].username}</span> ${posts[i].comment}
+            <span class="bold">${post.username}</span> ${post.comment}
         </p>
         </div>
     </div>
@@ -67,4 +67,4 @@ for (let i = 0; i < posts.length; i++) {
 </main>`;
 
   containerEl.appendChild(main);
-}
+});

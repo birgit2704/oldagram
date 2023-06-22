@@ -18,43 +18,40 @@ body {
   box-sizing: border-box;
   user-select: none;
 }
-.header-container {
-  padding: 5px 10px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #c6c6c6;
-}
 .general-container {
   width: 375px;
   margin: 0 auto;
   background: #fff;
   padding: 1px 0;
 }
+.header-container {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c6c6c6;
+}
 
 /* GENERAL TYPOGRAPHY */
-
+h1 {
+  color: #000;
+  font-size: 13px;
+  font-family: Source Sans Pro;
+}
 p {
   color: #000;
   font-size: 12px;
   font-family: Source Sans Pro;
 }
-h1 {
-  color: #000;
-  font-size: 13px;
-  font-family: Source Sans Pro;
+.bold {
   font-weight: 700;
 }
-
 .avatar {
   width: 34px;
   align-self: center;
   border-radius: 50%;
 }
-.bold {
-  font-weight: 700;
-}
-/* HEADER */
 
+/* HEADER */
 .logo {
   width: 127px;
 }
@@ -68,34 +65,25 @@ main {
   padding: 10px;
   display: flex;
 }
-
 .avatar-text {
   padding-left: 7px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .avatar-text h1 {
-  font-size: 13px;
-  font-weight: 700;
   margin: 0;
   padding: 0;
 }
 .avatar-text p {
-  font-size: 12px;
-  font-weight: 300;
   margin: 0;
 }
 .selfie {
-  display: block;
   width: 100%;
 }
-
 .icons-section {
   padding: 20px 10px 0;
 }
-
 .icons-section img {
   width: 28px;
   margin-right: 10px;
@@ -103,7 +91,6 @@ main {
 .icons-section img:hover {
   opacity: 0.5;
 }
-
 .comments p {
   padding: 0 4px;
   font-size: 13px;
