@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("SourceSansPro-Regular.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("SourceSansPro-Bold.ttf");
+  font-weight: 700;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #ededed;
+  box-sizing: border-box;
+}
+.general-container {
+  width: 375px;
+  margin: 20px auto;
+  background: #fff;
+}
+
+/* GENERAL TYPOGRAPHY */
+
+p {
+  color: #000;
+  font-size: 12px;
+  font-family: Source Sans Pro;
+}
+h1 {
+  color: #000;
+  font-size: 13px;
+  font-family: Source Sans Pro;
+  font-weight: 700;
+}
+
+.avatar {
+  width: 34px;
+  align-self: center;
+  border-radius: 50%;
+}
+.bold {
+  font-weight: 700;
+}
+/* HEADER */
+header {
+  padding: 5px 16px;
+  border-bottom: 1px solid #c6c6c6;
+
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 127px;
+}
+
+/* MAIN PART */
+main {
+  padding-bottom: 3px;
+  margin-bottom: 25px;
+}
+.main-header {
+  padding: 10px;
+  display: flex;
+}
+
+.avatar-text {
+  padding-left: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.avatar-text h1 {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.avatar-text p {
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+}
+.selfie {
+  display: block;
+  width: 100%;
+}
+
+.icons-section {
+  padding: 20px 10px 0;
+}
+
+.icons-section img {
+  width: 28px;
+  margin-right: 10px;
+}
+.icons-section img:hover {
+  opacity: 0.5;
+}
+
+.comments p {
+  padding: 0 4px;
+  font-size: 13px;
+  margin-top: 5px;
+}
