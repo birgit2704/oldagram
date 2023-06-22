@@ -12,15 +12,23 @@
 html,
 body {
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
   font-family: "Source Sans Pro", sans-serif;
   background-color: #ededed;
   box-sizing: border-box;
+  user-select: none;
+}
+.header-container {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c6c6c6;
 }
 .general-container {
   width: 375px;
-  margin: 20px auto;
+  margin: 0 auto;
   background: #fff;
+  padding: 1px 0;
 }
 
 /* GENERAL TYPOGRAPHY */
@@ -46,21 +54,15 @@ h1 {
   font-weight: 700;
 }
 /* HEADER */
-header {
-  padding: 5px 16px;
-  border-bottom: 1px solid #c6c6c6;
 
-  display: flex;
-  justify-content: space-between;
-}
 .logo {
   width: 127px;
 }
 
 /* MAIN PART */
 main {
-  padding-bottom: 3px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
+  background-color: #ededed;
 }
 .main-header {
   padding: 10px;
